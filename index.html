@@ -52,17 +52,17 @@
                     <p class="text-white text-center text-muted text-lg">Full Stack Web Developer</p>
                 </div>
                 <div class="row">
-                    <div class="col-4 offset-4">
-                        <p class="text-white text-center text-bottom">Connect With Me!</p>
+                    <div class="col-8 offset-2 connections" id="connections">
+                        <p class="text-white text-center text-bottom margin">Connect With Me!</p>
                         <div class="row text-center">
                             <div class="col">
-                                <a href="#" class="btn btn-outline-light">Github</a>
+                                <a href="#" class="btn btn-outline-light margin">Email</a>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-outline-light">Github</a>
+                                <a href="#" class="btn btn-outline-light margin">LinkedIn</a>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-outline-light">Github</a>
+                                <a href="#" class="btn btn-outline-light margin">Github</a>
                             </div>
                         </div>
                     </div>
@@ -73,47 +73,69 @@
 
         <section id="about">
             <div class="container-fluid">
+                <div class="row justify-content-center hidden mb-4">
+                    <button class="btn btn-outline-dark mr-1 ab" type="button" data-toggle="collapse" data-target="#collapse1" id="btn1" aria-expanded="false" aria-controls="collapse1">
+                        Front-End
+                    </button>
+                    <button class="btn btn-outline-dark mr-1 ab" type="button" data-toggle="collapse" data-target="#collapse2" id="btn2" aria-expanded="false" aria-controls="collapse2">
+                        Back-End
+                    </button>
+                    <button class="btn btn-outline-dark mr-1 ab" type="button" data-toggle="collapse" data-target="#collapse3" id="btn3" aria-expanded="false" aria-controls="collapse3">
+                        Tool
+                    </button>
+                    <button class="btn btn-outline-dark ab" type="button" data-toggle="collapse" data-target="#collapse4" id="btn4" aria-expanded="false" aria-controls="collapse4">
+                        Lang
+                    </button>
+                </div>
                 <div class="row justify-content-center">
-                    <div class="col text-center ">
-                        <div class="card mx-auto">
-                            <h5 class="card-header">Front End</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
+                    <div class="collapse remove show" id="collapse1">
+                        <div class="col text-center ">
+                            <div class="card mx-auto">
+                                <h5 class="card-header">Front End</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">React/Redux</li>
+                                    <li class="list-group-item">HTML/CSS</li>
+                                    <li class="list-group-item">JavaScript</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col text-center">
-                        <div class="card mx-auto">
-                            <h5 class="card-header">Back End</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
+                    <div class="collapse remove" id="collapse2">
+                        <div class="col text-center">
+                            <div class="card mx-auto">
+                                <h5 class="card-header">Back End</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Flask</li>
+                                    <li class="list-group-item">Node.js</li>
+                                    <li class="list-group-item">PostgreSQL/MongoDB</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center pt-5">
-                    <div class="col text-center ">
-                        <div class="card mx-auto">
-                            <h5 class="card-header">Front End</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
+                <div class="row justify-content-center padding">
+                    <div class="collapse remove" id="collapse3">
+                        <div class="col text-center ">
+                            <div class="card mx-auto">
+                                <h5 class="card-header">Toolkit</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Git</li>
+                                    <li class="list-group-item">VSCode</li>
+                                    <li class="list-group-item">Bootstrap</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col text-center">
-                        <div class="card mx-auto">
-                            <h5 class="card-header">Back End</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
+                    <div class="collapse remove" id="collapse4">
+                        <div class="col text-center">
+                            <div class="card mx-auto">
+                                <h5 class="card-header">Languages</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">JavaScript</li>
+                                    <li class="list-group-item">Python</li>
+                                    <li class="list-group-item">C/C++</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,13 +144,66 @@
 
         <section id="projects">
             <div class="container-fluid bg-dark">
+                <div class="card mt-3 toggle-hidden mx-auto">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark">Github</a>
+                    </div>
+                </div>
+                <div class="card mt-3 toggle-hidden mx-auto">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark">Github</a>
+                    </div>
+                </div>
 
+                <div class="card mt-3 collapse toggle-hidden mx-auto">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark">Github</a>
+                    </div>
+                </div>
+                <div class="card mt-3 collapse toggle-hidden mx-auto">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark">Github</a>
+                    </div>
+                </div>
+                <div class='text-center'>
+                    <button class="btn btn-outline-light mt-4" id='next'>Next</button>
+                </div>
+                
             </div>
+            
         </section>
         
         <section id="contact">
             <div class="container-fluid">
-
+                <div class="col-4 offset-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email Address</label>
+                            <input type="email" class="form-control email" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput2">Subject</label>
+                            <input type="subject" class="form-control subject" id="exampleFormControlInput2" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"> Message</label>
+                            <textarea class="form-control message" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
     </div>
@@ -138,6 +213,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="static/js/script.js"></script>
+    <script type="text/javascript" src="static/js/button-collapse.js"></script>
+    <script type="text/javascript" src="static/js/contact-form.js"></script>
 
 </body>
 </html>

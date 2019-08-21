@@ -15,66 +15,106 @@ html, body{
     transition: all 1.4s ease;
 }
 
-@media (max-width: 1000px){
-    .text-main{
-        font-size: 5rem;
-        margin-bottom: 0;
-    }
-    
-    .text-lg {
-        font-size: 2rem;
-    }
-    .card {
-        width: 18rem;
-    }
+.text-main{
+    font-size: 5rem;
+    margin-bottom: 0;
 }
 
-
-@media (min-width: 1000px){
-    .text-main{
-        font-size: 5rem;
-        margin-bottom: 0;
-    }
-    
-    .text-lg {
-        font-size: 2rem;
-    }
+.text-lg {
+    font-size: 2rem;
 }
-@media (min-width: 1500px){
-    .text-main{
-        font-size: 10rem;
-        margin-bottom: 0;
-    }
-    
-    .text-lg {
-        font-size: 4rem;
-    }
-    .card {
-        width: 22rem;
-    }
+.card {
+    width: 18rem;
+}
+.hidden{
+    visibility: hidden;
 }
 
-@media (min-height: 1000px) {
-    .text-bottom{
-        padding-top: 800px;
-    }
-}
-@media (max-height: 1000px){
-    .text-bottom{
-        padding-top: 200px;
-    }
-}
-
-@media (max-width: 500px){
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
     .text-main{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 0;
     }
     
     .text-lg {
         font-size: 1rem;
     }
-    .card {
-        width: 15rem;
+    .margin {
+        margin-top: 20px;
     }
-}
+
+    .card {
+        width: 18rem;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .text-main{
+        font-size: 6rem;
+        margin-bottom: 0;
+    }
+    
+    .text-lg {
+        font-size: 3rem;
+    }
+    .margin {
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 22rem;
+    }
+    .text-bottom{
+        font-size: 2.5rem;
+    }
+    .connections{
+        margin-top: 200px;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .padding{
+        margin-top: 100px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-main{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    
+    .text-lg {
+        font-size: 2rem;
+    }
+    .margin {
+        margin-top: 0px;;
+    }
+
+    .card {
+        width: 22rem;
+    }
+    .text-bottom{
+        font-size: 2rem;
+    }
+    .connections{
+        margin-top: 200px;
+    }
+    .btn{
+        padding: 7px 13px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    .padding{
+        margin-top: 25px;
+    }
+ }
