@@ -1,4 +1,1 @@
-"# newWebsite" 
-# newWebsite
-# new-website
-# new-website
+# A potential website redesign concept
